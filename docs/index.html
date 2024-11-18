@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Demo</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/index-style.min.css">
+  </head>
+  <body class="page__body">
+    <svg xmlns="http://www.w3.org/2000/svg" style="position: absolute; width: 0; height: 0; clip: rect(0 0 0 0);">
+      <defs>
+        <symbol id="facebook-icon" viewBox="0 0 12 23">
+          <path d="M11.21 12.94l.62-4.16H7.95v-2.7c0-1.14.54-2.25 2.29-2.25H12V.28S10.4 0 8.86 0c-3.2 0-5.3 1.99-5.3 5.6v3.17H0v4.16h3.56V23h4.38V12.94h3.27z"></path>
+        </symbol>
+        <symbol id="instagram-icon" viewBox="0 0 19 19">
+          <path d="M9.5 0C6.92 0 6.6.01 5.58.06c-1.01.05-1.7.2-2.3.44-.64.24-1.21.61-1.68 1.1-.49.47-.86 1.04-1.1 1.68-.24.6-.39 1.29-.44 2.3C.01 6.6 0 6.92 0 9.5s.01 2.9.06 3.92c.05 1.01.21 1.7.44 2.31.24.63.61 1.21 1.1 1.68.47.49 1.05.86 1.68 1.1.61.23 1.3.39 2.31.44 1.01.04 1.33.05 3.91.05s2.9-.01 3.92-.06c1.01-.05 1.7-.21 2.31-.44.63-.24 1.21-.61 1.68-1.1.49-.47.86-1.05 1.1-1.68.23-.61.39-1.3.44-2.31.04-1.01.05-1.33.05-3.91s-.01-2.9-.06-3.92c-.05-1.01-.21-1.7-.44-2.31-.24-.63-.61-1.21-1.1-1.68-.47-.49-1.05-.86-1.68-1.1-.61-.24-1.3-.39-2.31-.44C12.4.01 12.08 0 9.5 0zm0 1.71c2.54 0 2.84.01 3.84.06.92.04 1.43.2 1.76.33.41.15.79.4 1.1.71.31.31.56.68.71 1.09.13.33.28.84.33 1.76.04 1 .06 1.31.06 3.84 0 2.54-.01 2.84-.06 3.84-.05.92-.2 1.43-.33 1.76-.18.45-.38.76-.71 1.09-.31.31-.68.56-1.1.71-.33.13-.84.28-1.77.33-1.01.04-1.3.06-3.85.06-2.54 0-2.84-.01-3.85-.06-.92-.05-1.43-.2-1.77-.33-.45-.18-.76-.38-1.09-.71-.33-.33-.55-.65-.71-1.09-.13-.33-.29-.84-.33-1.77-.03-1-.05-1.3-.05-3.84 0-2.53.02-2.84.05-3.85.05-.93.2-1.44.33-1.77.16-.45.38-.76.71-1.1.33-.33.64-.54 1.09-.71.33-.13.83-.28 1.76-.33 1.01-.04 1.3-.05 3.84-.05l.04.03zm0 2.91c-.64 0-1.27.13-1.87.37-.59.25-1.13.61-1.58 1.06-.45.45-.81.99-1.06 1.58s-.37 1.23-.37 1.87c0 .64.13 1.27.37 1.87.25.59.6 1.13 1.06 1.58.45.45.99.81 1.58 1.06s1.23.37 1.87.37c.64 0 1.27-.13 1.87-.37.59-.24 1.13-.6 1.58-1.06.45-.45.81-.99 1.06-1.58.24-.59.37-1.23.37-1.87 0-.64-.13-1.27-.37-1.87s-.6-1.13-1.06-1.58a4.99 4.99 0 00-1.58-1.06c-.6-.24-1.23-.37-1.87-.37zm0 8.05a3.171 3.171 0 010-6.34 3.171 3.171 0 010 6.34zm6.21-8.24c0 .3-.12.59-.33.81a1.142 1.142 0 01-1.25.24c-.13-.05-.26-.14-.36-.24-.11-.11-.19-.24-.25-.37a1.117 1.117 0 010-.88c.06-.14.14-.26.25-.37a1.152 1.152 0 01.81-.34c.62.01 1.13.52 1.13 1.15z"></path>
+        </symbol>
+        <symbol id="twitter-icon" viewBox="0 0 23 19">
+          <path d="M23 2.25c-.85.38-1.75.64-2.71.75A4.76 4.76 0 0022.36.35c-.93.56-1.94.95-3 1.16A4.679 4.679 0 0016.68.06c-1.03-.17-2.08.01-3 .5-.92.5-1.65 1.29-2.07 2.25-.43.96-.53 2.04-.29 3.07-1.87-.08-3.7-.58-5.38-1.44C4.26 3.57 2.79 2.36 1.6.88c-.4.71-.64 1.54-.64 2.41a4.844 4.844 0 002.1 3.99c-.75-.02-1.48-.23-2.14-.6v.06c0 1.11.38 2.18 1.07 3.04.69.86 1.65 1.45 2.72 1.66-.7.19-1.42.22-2.13.08.3.95.89 1.79 1.68 2.38.79.6 1.74.93 2.73.95A9.354 9.354 0 010 16.83C2.16 18.25 4.67 19 7.23 19c8.68 0 13.43-7.31 13.43-13.64 0-.21-.01-.41-.01-.62A9.78 9.78 0 0023 2.25z"></path>
+        </symbol>
+        <symbol id="telegram-icon" viewBox="0 0 12 12">
+          <path d="M5.03 7.436l-.18 2.52c.256 0 .367-.11.5-.242l1.203-1.149 2.49 1.824c.457.255.779.12.902-.42l1.635-7.661c.146-.676-.244-.94-.689-.774l-9.61 3.68c-.656.254-.646.62-.111.785l2.457.764 5.707-3.57c.268-.179.512-.08.311.098L5.03 7.436z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    <header class="header">
+      <div class="box">
+        <div class="header__content"><a class="header__logo logo" href="./index.html" aria-label="logo"><img class="logo__icon" src="./img/logo-zefir.svg" alt="" width="98" height=""></a></div>
+      </div>
+    </header>
+    <main class="page-main">
+      <div class="bg">
+        <section class="hero">
+          <div class="hero__content box">
+            <h1 class="hero__title title1 grid-item">ИНВЕСТИЦИИ</h1>
+            <div class="hero__row-wrap">
+              <div class="hero__circle grid-item">
+                <svg class="svg-circle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                  <defs>
+                    <path id="circlePath" d="M 20 100 a 80 80 0 1 1 160 0 a 80 80 0 1 1 -160 0"></path>
+                  </defs>
+                  <g>
+                    <use xlink:href="#circlePath" fill="none"></use>
+                    <text fill="#ECEBEC" style="font-size:18px;">
+                      <textPath xlink:href="#circlePath">Присоединиться к проекту</textPath>
+                      <textPath xlink:href="#circlePath" startOffset="96%" fill="#FFD600" style="font-size:24px;font-weight: bold;">&bull;</textPath>
+                      <textPath xlink:href="#circlePath" startOffset="50%">Присоединиться к проекту</textPath>
+                      <textPath class="yellow-dot" xlink:href="#circlePath" startOffset="46%" fill="#FFD600" style="font-size:24px;font-weight: bold;">&bull;</textPath>
+                    </text>
+                  </g>
+                </svg>
+                <svg class="svg-arrow" width="61" height="8" viewBox="0 0 61 8" fill="#ecebec" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z"></path>
+                </svg>
+              </div>
+              <div>
+                <h2 class="hero__title title2 grid-item">КАК ИСКУССТВО</h2>
+                <div class="hero__subtitle grid-item">Прозрачные инвестиции под вашим контролем</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about panel" id="section2">
+          <div class="about__us">
+            <div class="about__header border-animate">
+              <div class="about__header-inner box">
+                <div class="about__header-title">О ПРОЕКТЕ</div>
+              </div>
+            </div>
+            <div class="about__hero border-animate">
+              <div class="about__hero-title box">Zefir разрабатывает и предлагает к использованию продукты, которые позволяют сохранить и преумножить капитал</div>
+              <div class="about__hero-subtitle about-descr box">Ежедневно количество людей, рассматривающих инвестиции как дополнительный или основной доход , стремительно растет. Компания ZEFIR предлагает возможность использования уникальных продуктов, которые помогают сохранять и приумножать капитал клиентов ZEFIR. Благодаря нашим решениям, любой человек, даже не имеющий опыта в сфере инвестирования сможет добиться поставленых целей</div>
+            </div>
+          </div>
+          <div class="about__bot box11">
+            <div class="about__slide">
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-top box">
+                  <div class="about__slide-title-wrap">
+                    <div class="about__slide-title">
+                      <p class="gsap">zefir</p>
+                    </div>
+                    <div class="about__slide-title">
+                      <p class="gsap">CENT BOT</p>
+                    </div>
+                  </div>
+                  <div class="about__slide-logo"><img src="./img/elem.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-middle box">
+                  <div class="about__slide-info gsap">
+                    <div class="about__slide-text about-descr">Tорговый робот, работающий на центовых счетах, совершающий операции по инструменту EUR/USD. Уникальный торговый алгоритм, работающий по принципу пропорционального копирования, позволяет каждому клиенту Zefir держать процесс инвестирования под контролем. Благодаря этому обеспечивается полная прозрачность процесса</div>
+                    <ul class="about__slide-list">
+                      <li class="about__slide-item">Ожидаемая доходность от 8-12% в месяц</li>
+                    </ul>
+                  </div>
+                  <div class="about__slide-coast">
+                    <div class="about__slide-coast-inner">
+                      <p>ДЕПОЗИТ</p>
+                      <p>ОТ 100$ ДО 200$</p>
+                      <div class="progress-circle">
+                        <svg width="220" height="220">
+                          <circle class="track-big" cx="110" cy="110" r="100"></circle>
+                          <circle class="progress-big-about" cx="110" cy="110" r="100"></circle>
+                          <circle class="track-small" cx="110" cy="110" r="90"></circle>
+                          <circle class="progress-small-about" cx="110" cy="110" r="90"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-bottom box">
+                  <ol class="preview__list">
+                    <li class="preview__item">ZEFIR OIL BOT</li>
+                    <li class="preview__item d-none">ZEFIR OIL BOT</li>
+                    <li class="preview__item d-none">ZEFIR OIL BOT</li>
+                  </ol>
+                  <div class="about__slide-nav">
+                    <div class="about__slide-arrow arrow-prev arrow-prev--first"><svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646442 3.64645C0.45118 3.84171 0.45118 4.15829 0.646442 4.35355L3.82842 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.73079 7.34027 4.73079 7.02369 4.53553 6.82843L1.7071 4L4.53553 1.17157C4.73079 0.976311 4.73079 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82842 0.464466L0.646442 3.64645ZM61 3.5L0.999996 3.5V4.5L61 4.5V3.5Z"/>
+</svg>
+                    </div>
+                    <div class="about__slide-arrow arrow-next"><svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z"/>
+</svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__slide d-none">
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-top box">
+                  <div class="about__slide-title-wrap">
+                    <div class="about__slide-title">
+                      <p class="gsap">zefir</p>
+                    </div>
+                    <div class="about__slide-title">
+                      <p class="gsap">oil BOT</p>
+                    </div>
+                  </div>
+                  <div class="about__slide-logo"><img src="./img/elem2.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-middle box">
+                  <div class="about__slide-info gsap">
+                    <div class="about__slide-text about-descr">Торговый робот, разработанный компанией ZEFIR. Извлекает прибыль благодаря торговле по паре EUR/USD. Уникальный торговый алгоритм и система контроля за рисками позволяют получать 8-15% в месяц. Работает по принципу пропорционального копирования, дает возможность каждому клиенту ZEFIR держать процесс инвестирования под контролем.  Депозит от 500 USD</div>
+                    <ul class="about__slide-list">
+                      <li class="about__slide-item">Ожидаемая доходность от 10-15% в месяц</li>
+                    </ul>
+                  </div>
+                  <div class="about__slide-coast">
+                    <div class="about__slide-coast-inner">
+                      <p>ДЕПОЗИТ</p>
+                      <p>ОТ 500$</p>
+                      <div class="progress-circle">
+                        <svg width="220" height="220">
+                          <circle class="track-big" cx="110" cy="110" r="100"></circle>
+                          <circle class="progress-big-about" cx="110" cy="110" r="100"></circle>
+                          <circle class="track-small" cx="110" cy="110" r="90"></circle>
+                          <circle class="progress-small-about" cx="110" cy="110" r="90"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-bottom box">
+                  <ol class="preview__list">
+                    <li class="preview__item d-none">ZEFIR OIL BOT</li>
+                    <li class="preview__item">ZEFIR trust investments</li>
+                    <li class="preview__item d-none">ZEFIR OIL BOT</li>
+                  </ol>
+                  <div class="about__slide-nav">
+                    <div class="about__slide-arrow arrow-prev"><svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646442 3.64645C0.45118 3.84171 0.45118 4.15829 0.646442 4.35355L3.82842 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.73079 7.34027 4.73079 7.02369 4.53553 6.82843L1.7071 4L4.53553 1.17157C4.73079 0.976311 4.73079 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82842 0.464466L0.646442 3.64645ZM61 3.5L0.999996 3.5V4.5L61 4.5V3.5Z"/>
+</svg>
+                    </div>
+                    <div class="about__slide-arrow arrow-next"><svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z"/>
+</svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="about__slide d-none">
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-top box">
+                  <div class="about__slide-title-wrap">
+                    <div class="about__slide-title">
+                      <p class="gsap">zefir</p>
+                    </div>
+                    <div class="about__slide-title">
+                      <p class="gsap">CENT BOT</p>
+                    </div>
+                  </div>
+                  <div class="about__slide-logo"><img src="./img/elem3.jpg" alt=""></div>
+                </div>
+              </div>
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-middle box">
+                  <div class="about__slide-info gsap">
+                    <div class="about__slide-text about-descr">Tорговый робот, работающий на центовых счетах, совершающий операции по инструменту EUR/USD. Уникальный торговый алгоритм, работающий по принципу пропорционального копирования, позволяет каждому клиенту Zefir держать процесс инвестирования под контролем. Благодаря этому обеспечивается полная прозрачность процесса</div>
+                    <ul class="about__slide-list">
+                      <li class="about__slide-item">Ожидаемая доходность от 8-12% в месяц</li>
+                    </ul>
+                  </div>
+                  <div class="about__slide-coast">
+                    <div class="about__slide-coast-inner">
+                      <p>ДЕПОЗИТ</p>
+                      <p>ОТ 100$ ДО 200$</p>
+                      <div class="progress-circle">
+                        <svg width="220" height="220">
+                          <circle class="track-big" cx="110" cy="110" r="100"></circle>
+                          <circle class="progress-big-about" cx="110" cy="110" r="100"></circle>
+                          <circle class="track-small" cx="110" cy="110" r="90"></circle>
+                          <circle class="progress-small-about" cx="110" cy="110" r="90"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__slide-top-wrap">
+                <div class="about__slide-bottom box">
+                  <ol class="preview__list">
+                    <li class="preview__item d-none">ZEFIR OIL BOT</li>
+                    <li class="preview__item d-none">ZEFIR OIL BOT</li>
+                    <li class="preview__item">ZEFIR OIL BOT</li>
+                  </ol>
+                  <div class="about__slide-nav">
+                    <div class="about__slide-arrow arrow-prev"><svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.646442 3.64645C0.45118 3.84171 0.45118 4.15829 0.646442 4.35355L3.82842 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.73079 7.34027 4.73079 7.02369 4.53553 6.82843L1.7071 4L4.53553 1.17157C4.73079 0.976311 4.73079 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82842 0.464466L0.646442 3.64645ZM61 3.5L0.999996 3.5V4.5L61 4.5V3.5Z"/>
+</svg>
+                    </div>
+                    <div class="about__slide-arrow arrow-next arrow-next--last"><svg width="61" height="8" viewBox="0 0 61 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z"/>
+</svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="benefits">
+        <div class="benefits__inner">
+          <div class="benefits__title-wrap">
+            <div class="box">
+              <div class="benefits__title">почему мы</div>
+            </div>
+          </div>
+          <div class="benefits__slider box">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="benefits__slider-item">
+                    <div class="benefits__slider-picture"><img class="benefits__slider-img" src="./img/slider1.svg" alt=""></div>
+                    <div class="benefits__slider-text">Возможность страхования депозитов</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="benefits__slider-item">
+                    <div class="benefits__slider-picture"><img class="benefits__slider-img" src="./img/slider2.svg" alt=""></div>
+                    <div class="benefits__slider-text">Полная прозрачность процесса с доступом к депозиту в любое время</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="benefits__slider-item">
+                    <div class="benefits__slider-picture"><img class="benefits__slider-img" src="./img/slider3.svg" alt=""></div>
+                    <div class="benefits__slider-text">Лучший план вознаграждений за рекомендации продуктов Zefir</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="benefits__slider-item">
+                    <div class="benefits__slider-picture"><img class="benefits__slider-img" src="./img/slider1.svg" alt=""></div>
+                    <div class="benefits__slider-text">Lorem ipsum dolor sit amet.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="benefits__slider-item">
+                    <div class="benefits__slider-picture"><img class="benefits__slider-img" src="./img/slider2.svg" alt=""></div>
+                    <div class="benefits__slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="benefits__slider-item">
+                    <div class="benefits__slider-picture"><img class="benefits__slider-img" src="./img/slider3.svg" alt=""></div>
+                    <div class="benefits__slider-text">Возможность страхования депозитов</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="box">
+        <div class="footer__row">
+          <div class="footer__head">
+            <div class="footer__head-wrap"><a class="logo" href="./index.html" aria-label="logo"><img class="logo__icon" src="./img/logo-zefir.svg" alt="" width="98" height=""></a></div>
+          </div>
+          <div class="footer__content">
+            <div class="footer__col">
+              <h4 class="footer__list-title">Info</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#!">About Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__list-title">legal</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#!">Terms of Use</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#!">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__list-title">Support</h4>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#!">FAQ</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#!">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copy">Copyright &copy; 2021. All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
