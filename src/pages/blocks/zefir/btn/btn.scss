@@ -1,0 +1,37 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    font-family: inherit;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s, color 0.3s;
+
+    &--green {
+        color: $white;
+        background-color: $green;
+        border: 1px solid transparent;
+        border-radius: 2px;
+
+        &:hover {
+            color: $green;
+            border-color: $green;
+            background-color: transparent;
+        }
+    }
+
+    &--blue {
+        color: $white;
+        background-color: $blue;
+        border: 1px solid transparent;
+        border-radius: 2px;
+
+        &:hover {
+            color: $blue;
+            border-color: $blue;
+            background-color: transparent;
+        }
+    }
+}

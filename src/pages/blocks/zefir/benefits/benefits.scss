@@ -1,0 +1,129 @@
+.benefits {
+    margin: 100px 0;
+    padding-bottom: 100px;
+    @include media-up--S {
+        margin: 150px 0;
+    }
+    @include media-up--L {
+        margin: 300px 0;
+    }
+}
+
+.benefits__inner {
+    overflow: hidden;
+}
+
+.benefits__title-wrap {
+    position: relative;
+    overflow: hidden;
+    &:after {
+        display:block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        border-top: 1px solid #D5D4D5;
+        border-bottom: 1px solid #D5D4D5;
+        border-radius: 1px;
+        transform: scaleX(0);
+        pointer-events: none;
+    }
+}
+
+.benefits__title {
+    font-size: 50px;
+    color: $text-color;
+    padding: 30px 0;
+    text-transform: uppercase;
+    @include media-up--L {
+        font-size: 80px;
+    }
+}
+
+.benefits__slider {
+    margin-top: 100px;
+}
+.benefits__slider-item {
+    // width: 400px;
+    height: 400px;
+    padding: 10px;
+    // border: 1px solid #D5D4D5;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &:after {
+        display:block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        border-top: 1px solid #D5D4D5;
+        border-bottom: 1px solid #D5D4D5;
+        border-radius: 1px;
+        transform: scaleX(0);
+        pointer-events: none;
+    }
+    &:before {
+        display:block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        border-left: 1px solid #D5D4D5;
+        border-right: 1px solid #D5D4D5;
+        border-radius: 1px;
+        transform: scaleY(0);
+        pointer-events: none;
+    }
+    @include media-up--S {
+        padding: 20px;
+    }
+    @include media-up--L {
+        padding: 30px;
+        // width: 400px;
+    }
+
+}
+
+.benefits__slider-picture {
+    width: 70px;
+    height: 70px;
+    // border: 1px solid #D5D4D5;
+    overflow: hidden;
+}
+
+.benefits__slider-text {
+    max-width: 300px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.swiper {
+    width: 100%;
+    // height: 100%;
+    // height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+  }
+
+//   .swiper-slide {
+//     text-align: center;
+//     height: calc((100% - 30px) / 2);
+
+//     /* Center slide text vertically */
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 28px;
+//     color: $yellow;
+//     border: 2px solid purple;
+//   }

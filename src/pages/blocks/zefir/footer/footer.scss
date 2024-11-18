@@ -1,0 +1,87 @@
+.footer {
+    padding: 20px 0;
+    background-image: url(../img/footer-bg-x2.png);
+    background-position: 50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__row {
+        display: grid;
+        margin: 15px 0;
+        gap: 25px;
+
+        @include media-up--L {
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 17px;
+        color: rgba($text-light-color, 0.4);
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+        @include media-up--S {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media-up--L {
+            justify-items: flex-end;
+            gap: 35px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 10px;
+    }
+
+    &__list-item {
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba($text-light-color, 0.6);
+    }
+
+    &__list-link:hover {
+        color: $yellow;
+    }
+
+    &__list-title {
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $text-light-color;
+    }
+
+    &__bottom {
+        padding-top: 30px;
+        font-size: 14px;
+        line-height: 17px;
+        border-top: 0.5px solid rgba($white, 0.15);
+
+        @include media-up--S {
+            display: grid;
+            // grid-template-columns: auto auto;
+            justify-content: flex-end;
+        }
+    }
+
+    &__date {
+        margin-bottom: 10px;
+        color: rgba($text-light-color, 0.4);
+
+        @include media-up--S {
+            margin-bottom: 0;
+        }
+    }
+
+    &__copy {
+        color: rgba($text-light-color, 0.4);
+    }
+}

@@ -1,0 +1,20 @@
+extends common/layout.pug
+
+block meta
+    title Demo
+    meta(name='description', content='')
+
+block head
+    link(rel='stylesheet', href='css/index-style.min.css')
+
+
+block content
+    .bg
+        include blocks/zefir/hero/hero.pug
+        include blocks/zefir/about/about.pug
+    include blocks/zefir/benefits/benefits.pug
+
+//- block append page-bottom
+//-     include blocks/demo-page/modal/modal.pug
+//- block append page-bottom
+//-     include blocks/zefir/modal/modal.pug

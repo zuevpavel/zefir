@@ -1,0 +1,33 @@
+.content {
+    padding: 60px 0;
+
+    &--dark-bg {
+        background: linear-gradient(256.5deg, #114e4f -9.93%, #040430 101.56%);
+    }
+
+    &--light-bg {
+        background: linear-gradient(256.5deg, #fffdfd -9.93%, #ebe9e9 101.56%);
+    }
+}
+
+.title {
+    margin-bottom: 20px;
+
+    @include fluid-type(28px, 60px, 420px, 1024px);
+
+    &--color {
+        color: $title-color;
+    }
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    color: $subtitle-color;
+}
+
+.descr {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba($text-color, 0.7);
+}

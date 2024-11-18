@@ -1,0 +1,24 @@
+.modal(id="modal-1")
+    .modal__overlay.modal-exit
+    .modal__content
+        .modal__close-btn.modal-exit
+        .modal__title log in
+        .modal__form
+            form.form(method="post")
+                .form__group.modal__form-group
+                    label.form__label.modal__form-label(for="email-1") Email address
+                    input.form__input.modal__form-input(type="email", id="email-1", placeholder="Enter your email address" autocomplete="username")
+
+                .form__group.modal__form-group
+                    label.form__label.modal__form-label(for="password-1") Password
+                    .form__input-wrap.modal__form-input-wrap
+                        input.form__input.modal__form-input(type="password", id="password-1", placeholder="Enter your password" autocomplete="current-password")
+                        .show-icon-wrap.js-show-icon
+                            svg.show-icon(width="20" height="20")
+                                use(xlink:href="#eye-icon")
+                            svg.show-icon.show-icon--line(width="20" height="20")
+                                use(xlink:href="#line-icon")
+                    a.form__link.modal-exit(href="#!" data-modal="modal-1") Forgot Password?
+
+                .form__text  Don't have an account? <a class="form__link modal-exit" href="#!" data-modal="modal-1">Sign Up</a>
+                button.form__submit.modal__form-submit.btn.btn--blue(type="submit") log in

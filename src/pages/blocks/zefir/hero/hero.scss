@@ -1,0 +1,142 @@
+.hero {
+    position: relative;
+    padding: 80px 0 50px;
+    // background: $black;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    &__picture {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+.hero__content {
+    display: grid;
+    flex-grow: 1;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hero__row-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    @include media-up--S {
+        flex-direction: unset;
+    }
+}
+
+.hero__subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #ECEBEC;
+    margin-top: 15px;
+    text-align: center;
+
+    @include media-up--S {
+        font-size: 24px;
+        text-align: unset;
+    }
+}
+
+.hero__title {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: #ECEBEC;
+    text-align: center;
+    @include media-up--S {
+        font-size: 50px;
+        text-align: unset;
+    }
+    @include media-up--L {
+        font-size: 80px;
+    }
+}
+
+.hero__circle {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform: scale(0.6);
+    order: 2;
+    @include media-up--S {
+        transform: scale(0.8);
+        order: unset;
+    }
+    @include media-up--L {
+        transform: scale(1);
+    }
+    .svg-circle {
+        animation-name: rotate;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    .svg-arrow {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        animation-name: rotate-big;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+}
+
+
+.progress-bar {
+    border: 1px solid #403f40;
+    padding: 40px;
+}
+
+.track {
+    fill: none;
+    stroke: #ecebec54;
+    stroke-width: 10;
+}
+
+.progress {
+    fill: none;
+    stroke: rgb(95, 190, 0);
+    stroke-width: 10;
+    stroke-linecap: round;
+    // stroke-dasharray: 630;
+    // stroke-dashoffset: 50;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    transition: stroke-dashoffset .3s;
+}
+
+.progress-bar__btn {
+    color: $white;
+    border-radius: 4px;
+    border: 1px solid $white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0); }
+}
+@keyframes rotate-big {
+    from { transform: rotate(-360deg); }
+    to { transform: rotate(0); }
+}
